@@ -1,0 +1,14 @@
+<mat-drawer opened class="example-sidenav" mode="side">
+  <h2>Moeda Atual: BRL</h2>
+
+  <mat-selection-list #currency >
+    <mat-list-option class="lista-moedas" *ngFor="let curType of currencyTypes">
+      {{curType}}
+    </mat-list-option>
+  </mat-selection-list>
+
+  <button mat-raised-button>
+    Atualizar Moedas
+  </button>
+</mat-drawer>
+
